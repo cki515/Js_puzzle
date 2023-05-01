@@ -57,6 +57,7 @@ function setGame() {
     time = 0;
     playTime.innerText = time;
     gameText.style.display = "none";
+    isPlaying = true;
     clearInterval(timeInterval);
 
     timeInterval = setInterval(() => {
@@ -83,14 +84,15 @@ function shuffleImage(array) {
 
 function checkStatus() {
     const currentList = [...container.children];
-    
     const unMatched = currentList.filter((list, index) => {
         return Number(list.getAttribute("data-type")) !== index;
     })
 
     if(unMatched.length === 0) {
-        isPlaying = false;
-        clearInterval(timeInterval);
-        gameText.style.display = "block";
+        if(isPlaying === true) {
+            isPlaying = false;
+            clearInterval(timeInterval);
+            gameText.style.display = "block";
+        }
     }
 }
