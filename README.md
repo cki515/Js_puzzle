@@ -1,5 +1,5 @@
 # Js_puzzle
-https://cki515.github.io/Js-puzzle/puzzleGame.html <br><br>
+https://cki515.github.io/Js_puzzle/puzzleGame.html <br><br>
 JavaScript puzzleGame <br><br>
 
 ### main <br><br>
