@@ -1,0 +1,202 @@
+/* Normalize Start */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html {
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+/* Normalize End */
+
+/* Library Start */
+.con {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+:root {
+    --site-width: 800px;
+}
+
+.con {
+    width: var(--site-width);
+}
+
+.con-min-width {
+    min-width: var(--site-width);
+}
+
+.block {
+    display: block;
+}
+
+.img-box > img {
+    width: 100%;
+    display: block;
+}
+
+.float-grid::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.float-grid > * {
+    float: left;
+    box-sizing: border-box;
+}
+
+.flex { 
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-jc-c {
+    justify-content: center;    
+}
+/* Library End */
+
+:root {
+    --color: #3b5998;
+}
+
+.wrapper {
+    height: 100%;
+    overflow: hidden;
+}
+
+.header {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1.5rem;
+    background: linear-gradient(to right, #24FE41, #FDFC47);
+}
+
+.title {
+    letter-spacing: 10px;
+    text-shadow: 5px 4px 3px rgba(6, 126, 145, 0.5);
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-time {
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: var(--color);
+}
+
+.image-container {
+    margin-top: -1rem;
+    border: 2px solid var(--color);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+li {
+    cursor: pointer;
+    width: 100px;
+    height: 100px;
+    background: #ccc;
+    color: #fff;
+    background: url("https://picsum.photos/id/534/400/400");
+}
+
+.start-button {
+    background: var(--color);
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+}
+
+.list0 {
+    background-position-x: 0px;
+    background-position-y: 0px;
+}
+.list1 {
+    background-position-x: -100px;
+    background-position-y: 0px;
+}
+.list2 {
+    background-position-x: -200px;
+    background-position-y: 0px;
+}
+.list3 {
+    background-position-x: -300px;
+    background-position-y: 0px;
+}
+.list4 {
+    background-position-x: 0px;
+    background-position-y: -100px;
+}
+.list5 {
+    background-position-x: -100px;
+    background-position-y: -100px;
+}
+.list6 {
+    background-position-x: -200px;
+    background-position-y: -100px;
+}
+.list7 {
+    background-position-x: -300px;
+    background-position-y: -100px;
+}
+.list8 {
+    background-position-x: 0px;
+    background-position-y: -200px;
+}
+.list9 {
+    background-position-x: -100px;
+    background-position-y: -200px;
+}
+.list10 {
+    background-position-x: -200px;
+    background-position-y: -200px;
+}
+.list11 {
+    background-position-x: -300px;
+    background-position-y: -200px;
+}
+.list12 {
+    background-position-x: 0px;
+    background-position-y: -300px;
+}
+.list13 {
+    background-position-x: -100px;
+    background-position-y: -300px;
+}
+.list14 {
+    background-position-x: -200px;
+    background-position-y: -300px;
+}
+.list15 {
+    background-position-x: -300px;
+    background-position-y: -300px;
+}
+
+.game-text {
+    position: absolute;
+    font-size: 45px;
+    font-weight: bold;
+    color: red;
+    display: none;
+}
